@@ -7,11 +7,19 @@
   min-height: 100vh;
 }
 
+
+.backgroundImage{
+  width: 100vw;
+  height:fit-content;
+  
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 0.85rem;
+  /* font-size: 0.85rem; */
+  font-size: 3.85rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
@@ -106,7 +114,7 @@
 }
 
 .logo {
-  position: relative;
+  position: absolute;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -210,15 +218,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
 
 @keyframes rotate {
   from {
