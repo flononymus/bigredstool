@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import backgroundImage from '@/public/background/brs expanded.webp'
 
 
 export default function Home() {
@@ -10,8 +9,19 @@ export default function Home() {
 
     <h1 className={styles.description} >
     big red stool
-
     </h1>
+
+    <div className={styles.logo}>
+           <Image
+              src="/enzian.svg"
+              alt="Vercel Logo"
+              className="dark:invert"
+              width={100}
+              height={50}
+              priority
+              />
+    </div>
+
   
     {/* <Image
     className={styles.backgroundImage}
